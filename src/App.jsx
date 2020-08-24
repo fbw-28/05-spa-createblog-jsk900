@@ -18,8 +18,6 @@ class App extends Component {
     postArray: [],
   };
 
-  tempArray = [];
-
   //OnChange event Listener for all input fields
   createPost = (e) => {
     this.setState({ ...this.state, [e.target.name]: e.target.value });
@@ -33,7 +31,6 @@ class App extends Component {
     e.preventDefault();
     const { userName, title, content } = this.state;
 
-    this.tempArray = [...this.state.postArray];
     let post = {
       id: uuid(),
       date: new Date(Date.now()).toLocaleString(),
@@ -41,13 +38,13 @@ class App extends Component {
       title,
       content,
     };
-    this.tempArray.push(post);
+
     this.setState({
-      postArray: this.tempArray,
+      postArray: [post, ...this.state.postArray],
+      userName: '',
+      title: '',
+      content: '',
     });
-    this.tempArray = [];
-    post = {};
-    this.setState({ userName: '', title: '', content: '' });
   };
 
   //Delete a post
