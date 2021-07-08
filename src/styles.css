@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+  background-image: url('./assets/back.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.height {
+  margin-top: 10%;
+}
+
+.header-text {
+  font-size: 3rem;
+
+  color: maroon;
+}
+
+.no-posts {
+  color: maroon;
+  margin-top: 20%;
+  font-size: 3rem;
+}
+
+.post-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-top: 5%;
+}
+
+aside {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+aside p {
+  font-size: 1.3rem;
+  color: maroon;
+}
+
+aside span {
+  font-weight: bold;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  padding: 4px;
+  text-align: center;
+  background-color: maroon;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.icon:hover,
+.link-icon:hover {
+  background-color: whitesmoke;
+  color: maroon;
+}
+
+.link-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+  border-radius: 3px;
+  background-color: maroon;
+  color: whitesmoke;
+}
+
+ul {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  margin-right: 30px;
+  height: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: #3a0b04;
+  font-size: 1.3rem;
+}
+
+a:hover {
+  color: maroon;
+  font-weight: bold;
+}
+
+.link-active {
+  border-bottom: 5px solid maroon;
+}
+
+.return-button {
+  position: relative;
+  width: 200px;
+  height: 60px;
+  padding: 5px;
+  top: 70%;
+  font-size: 1.5rem;
+  background-color: maroon;
+  color: whitesmoke;
+  outline: none;
+  border: none;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  cursor: pointer;
+}
+
+.return-button:hover {
+  background-color: whitesmoke;
+  color: maroon;
+}
+
+.not-found {
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/404.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.form-section {
+  margin-top: 10%;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+input {
+  padding: 10px;
+  width: 80%;
+  height: 50px;
+  margin: 2% 0;
+  background-color: maroon;
+  color: whitesmoke;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+input:nth-child(2) {
+  margin-bottom: 30px;
+}
+
+input::placeholder {
+  font-size: 1rem;
+  color: whitesmoke;
+  text-align: center;
+}
+
+textarea {
+  padding: 10px;
+  width: 80%;
+  resize: none;
+  background-color: maroon;
+  color: whitesmoke;
+  border: none;
+  outline: none;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+textarea::placeholder {
+  font-size: 1rem;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.post-button {
+  margin-top: 30px;
+  width: 80%;
+  height: 60px;
+  background-color: whitesmoke;
+  color: maroon;
+  border: none;
+  outline: none;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.post-button:hover {
+  background-color: maroon;
+  color: whitesmoke;
+}
+
+.view-post {
+  width: 100%;
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.view-post p {
+  width: 70%;
+  padding: 10px;
+  margin: 5px 10px;
+  font-size: 1.4rem;
+  word-wrap: break-word;
+  color: maroon;
+}
+
+.view-post p span {
+  font-weight: bold;
+}
